@@ -1,14 +1,46 @@
 <!doctype html>
 <html>
+     <head>
+        <title>I love KHE - Diary</title>
+        <meta charset="utf-8">
+        <script src="colors.js">
+        </script>
+    </head>
 
-  <head>
-    <title>I love KHE - Diary</title>
-    <meta charset="utf-8">
-  </head>
+    <body>
+        <div>
+            <input type="button" value="Say Hi Button" onclick="alert('Hi!!')">
+        </div>
 
-  <body>
-      <h1>Diary</h1>
-  </body>
+        <div>
+            <input type="button" value="To Night Mode" onclick="nightDayHandler(this);">
+        </div>
 
+        <h3>Menu</h3>
+        <ol>
+            <li><a href="menu_1.html">Diary</a></li>
+            <li><a href="menu_2.html">Gallary</a></li>
+            <li><a href="menu_3.html">About Me &amp; Her</a></li>
+        </ol>
+
+        <h1>Diary</h1>
+        <script>
+            var candidates = ['해방촌', '문화비축기지', '명동성당', '영화보기'];
+        </script>
+
+        <ol>
+            <script>
+                var i = 0;
+                while(i < candidates.length){
+                    document.write('<li>' + candidates[i] + '</li>');
+                    i = i + 1;
+                }
+            </script>
+        </ol>
+
+        <div>
+            <a href="menu_0.html">&lt;&lt;Back to the front page</a>
+        </div>
+    </body>
 </html>
 
